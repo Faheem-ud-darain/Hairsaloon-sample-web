@@ -12,9 +12,9 @@ const STYLE_VIBES = {
     desc: 'Signature hand-painted highlights that catch daylight seamlessly, tailored to your growth.',
     price: '$240',
     duration: '150m',
-    stylist: 'Sarah Jean',
+    stylist: 'Bilal',
     image: heroModel,
-    glow: 'radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(229, 176, 152, 0.18) 0%, transparent 60%)',
+    glow: 'radial-gradient(circle at var(--mouse-x, 50%)Var(--mouse-y, 50%), rgba(229, 176, 152, 0.18) 0%, transparent 60%)',
     color: 'var(--accent-gold)'
   },
   silk: {
@@ -26,7 +26,7 @@ const STYLE_VIBES = {
     duration: '120m',
     stylist: 'Elena Rostova',
     image: afterHair,
-    glow: 'radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(216, 120, 95, 0.15) 0%, transparent 60%)',
+    glow: 'radial-gradient(circle at var(--mouse-x, 50%)Var(--mouse-y, 50%), rgba(216, 120, 95, 0.15) 0%, transparent 60%)',
     color: '#d48a6a' // Warm Terracotta Rose Gold
   },
   cut: {
@@ -36,9 +36,9 @@ const STYLE_VIBES = {
     desc: 'Asymmetrical editorial texturing designed to sit perfectly without heavy styling.',
     price: '$95',
     duration: '60m',
-    stylist: 'Marcus Sterling',
+    stylist: 'Bilal',
     image: beforeHair,
-    glow: 'radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(184, 80, 110, 0.15) 0%, transparent 60%)',
+    glow: 'radial-gradient(circle at var(--mouse-x, 50%)Var(--mouse-y, 50%), rgba(184, 80, 110, 0.15) 0%, transparent 60%)',
     color: '#b35c6e' // Burgundy Rose
   }
 };
@@ -73,7 +73,7 @@ export default function Hero() {
       className="spotlight-container"
     >
       {/* Massive Background Decorative Lettering */}
-      <div style={styles.hugeBackdropText}>AURA</div>
+      <div style={styles.hugeBackdropText}>4K</div>
 
       <div className="container" style={styles.heroGrid}>
         {/* Left Column: Bold Editorial Typography & CTA */}

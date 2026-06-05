@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, User, CheckCircle2, ChevronRight, ChevronLeft, Star } from 'lucide-react';
 
 const STYLISTS = [
-  { id: 'sarah', name: 'Sarah Jean', role: 'Master Balayage Artist', rating: 4.9, reviews: 142, specialties: 'Color & Highlights' },
-  { id: 'marcus', name: 'Marcus Sterling', role: 'Senior Editorial Stylist', rating: 4.8, reviews: 96, specialties: 'Precision Haircuts & Texture' },
-  { id: 'elena', name: 'Elena Rostova', role: 'Extensions & Spa Specialist', rating: 5.0, reviews: 78, specialties: 'Keratin & Tape Extensions' },
+  { id: 'bilal', name: 'Bilal', role: 'Master Stylist & Director', rating: 4.9, reviews: 58, specialties: 'Balayage & Precision Cuts' },
+  { id: 'marcus', name: 'Marcus Sterling', role: 'Senior Stylist', rating: 4.8, reviews: 34, specialties: 'Texture & Styling' },
+  { id: 'elena', name: 'Elena Rostova', role: 'Extensions & Spa Specialist', rating: 5.0, reviews: 26, specialties: 'Keratin & Tape Extensions' },
 ];
 
 const TIME_SLOTS = [
@@ -77,7 +77,7 @@ export default function BookingSimulator({ selectedService, setSelectedService }
     <section id="booking" style={styles.section}>
       <div className="container">
         <div className="section-header reveal">
-          <p>EXPERIENCE AURA</p>
+          <p>EXPERIENCE 4K HAIR STUDIO</p>
           <h2>Reserve Your Appointment</h2>
           <span style={styles.subtext}>Select your services and schedule your visit seamlessly online.</span>
         </div>
@@ -110,7 +110,7 @@ export default function BookingSimulator({ selectedService, setSelectedService }
                 {/* Visual Gold Ticket Receipt */}
                 <div className="glass-panel" style={styles.receipt}>
                   <div style={styles.receiptHeader}>
-                    <span>AURA SALON RESERVATION</span>
+                    <span>4K HAIR STUDIO RESERVATION</span>
                   </div>
                   <div style={styles.receiptRow}>
                     <span>Client:</span>
@@ -133,11 +133,21 @@ export default function BookingSimulator({ selectedService, setSelectedService }
                     <span>Total Amount:</span>
                     <strong style={styles.receiptTotal}>${selectedService.price}</strong>
                   </div>
-                  <span style={styles.receiptFooter}>A confirmation SMS and reminder has been sent.</span>
+                  <span style={styles.receiptFooter}>*Send details to finalize on WhatsApp.</span>
                 </div>
 
-                <button onClick={resetBooking} className="btn-primary" style={{ marginTop: '2rem' }}>
-                  Book Another Appointment
+                <a 
+                  href={`https://wa.me/447888010133?text=Hi%204K%20Hair%20Studio%20London!%20I'd%20like%20to%20confirm%20my%20appointment%20for%20a%20${encodeURIComponent(selectedService.name)}%20with%20${encodeURIComponent(selectedStylist.name)}%20on%20${encodeURIComponent(selectedDate.month)}%20${encodeURIComponent(selectedDate.num)}%20at%20${encodeURIComponent(selectedTime)}.`} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-primary" 
+                  style={{ marginTop: '2rem', display: 'inline-flex', alignItems: 'center', backgroundColor: '#25D366', color: '#ffffff', border: '1px solid #25D366' }}
+                >
+                  Confirm on WhatsApp
+                </a>
+                
+                <button onClick={resetBooking} style={{ marginTop: '1rem', fontSize: '0.75rem', color: 'var(--text-secondary)', textDecoration: 'underline' }}>
+                  Or Start Over
                 </button>
               </div>
             ) : (

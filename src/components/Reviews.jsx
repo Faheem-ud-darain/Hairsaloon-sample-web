@@ -4,27 +4,27 @@ import { Star, Quote } from 'lucide-react';
 const REVIEWS = [
   {
     id: 1,
-    name: 'Catherine Ross',
+    name: 'Steve P.',
     rating: 5,
     date: '1 week ago',
-    text: 'Aura Salon is in a league of its own. Sarah Jean completely transformed my brassy hair into a gorgeous, dimensional honey balayage. The space feels like a high-end luxury spa, and the booking system was so seamless.',
-    tag: 'Balayage & Glaze'
+    text: 'Excellent experience and highly recommend his services. The styling and custom colouring came out exactly how I wanted.',
+    tag: 'Balayage & Hair Colouring'
   },
   {
     id: 2,
-    name: 'Julianne Myers',
+    name: 'Clarissa M.',
     rating: 5,
     date: '3 weeks ago',
-    text: 'I\'ve been going to Marcus for razor cuts for the past two years. He is incredibly precise, and my bob grow outs are so low-maintenance. They offer organic tea, and the attention to detail is unmatched.',
-    tag: 'Signature Cut & Styling'
+    text: 'The customer service was phenomenal and my stylist was super friendly. The blowout wave volume was absolutely stunning!',
+    tag: 'Luxury Blowdry & Style'
   },
   {
     id: 3,
-    name: 'Sophia Thorne',
+    name: 'Alex H.',
     rating: 5,
     date: '1 month ago',
-    text: 'Elena did my tape-in extensions and botanical scalp detox. Not only is the volume and blending completely indistinguishable from my real hair, but my scalp health is the best it\'s ever been. Highly recommend!',
-    tag: 'Tape-In Extensions'
+    text: 'Bilal is hands down the best hairstylist in London! Precision cuts, color dimensions, and styling are in a league of their own.',
+    tag: 'Precision Cuts'
   }
 ];
 
@@ -49,7 +49,7 @@ export default function Reviews() {
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <div className="section-header reveal">
           <p>CLIENT TESTIMONIALS</p>
-          <h2>Aura Experiences</h2>
+          <h2>4K Experiences</h2>
         </div>
 
         <div className="reveal" style={styles.carouselContainer}>

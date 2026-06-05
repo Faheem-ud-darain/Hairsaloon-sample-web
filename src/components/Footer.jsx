@@ -22,11 +22,11 @@ export default function Footer() {
         {/* Brand Info */}
         <div style={styles.column}>
           <div style={styles.logo} onClick={handleScrollToTop}>
-            <span style={styles.logoLetter}>A</span>
-            <span style={styles.logoText}>AURA <span style={styles.logoSubText}>SALON</span></span>
+            <span style={styles.logoLetter}>4K</span>
+            <span style={styles.logoText}>4K <span style={styles.logoSubText}>HAIR STUDIO</span></span>
           </div>
           <p style={styles.brandDesc}>
-            Bespoke styling and certified organic treatments designed to cultivate your unique personal aesthetic.
+            Bespoke styling and professional hair colouring treatments designed to cultivate your unique personal style in the heart of London.
           </p>
           <div style={styles.socialRow}>
             <a href="#instagram" aria-label="Instagram" style={styles.socialIcon}>
@@ -42,10 +42,9 @@ export default function Footer() {
         <div style={styles.column}>
           <h4 style={styles.columnTitle}>OPERATING HOURS</h4>
           <div style={styles.hoursList}>
-            <div style={styles.hoursRow}><span>Monday</span> <span>Closed</span></div>
-            <div style={styles.hoursRow}><span>Tuesday – Friday</span> <span>9:00 AM – 8:00 PM</span></div>
-            <div style={styles.hoursRow}><span>Saturday</span> <span>9:00 AM – 6:00 PM</span></div>
-            <div style={styles.hoursRow}><span>Sunday</span> <span>10:00 AM – 4:00 PM</span></div>
+            <div style={styles.hoursRow}><span>Mon – Fri</span> <span>9:00 AM – 8:30 PM</span></div>
+            <div style={styles.hoursRow}><span>Saturday</span> <span>9:00 AM – 8:00 PM</span></div>
+            <div style={styles.hoursRow}><span>Sunday</span> <span>10:30 AM – 5:00 PM</span></div>
           </div>
         </div>
 
@@ -53,17 +52,17 @@ export default function Footer() {
         <div style={styles.column}>
           <h4 style={styles.columnTitle}>CONTACT & LOCATION</h4>
           <div style={styles.contactDetails}>
-            <a href="tel:5551234567" style={styles.contactItem}>
+            <a href="tel:+447888010133" style={styles.contactItem}>
               <Phone size={15} style={styles.contactIcon} />
-              <span>(555) 123-4567</span>
+              <span>+44 7888 010133</span>
             </a>
-            <a href="mailto:appointments@aurasalons.com" style={styles.contactItem}>
+            <a href="https://wa.me/447888010133" target="_blank" rel="noopener noreferrer" style={styles.contactItem}>
               <Mail size={15} style={styles.contactIcon} />
-              <span>appointments@aurasalons.com</span>
+              <span>wa.me/447888010133</span>
             </a>
             <div style={styles.contactItem}>
               <MapPin size={15} style={styles.contactIcon} />
-              <span>124 Luxury Way, Suite A, New York, NY</span>
+              <span>86, 90 Park St, London W1K 7TN, UK</span>
             </div>
           </div>
           
@@ -103,7 +102,7 @@ export default function Footer() {
       {/* Footer Bottom Bar */}
       <div style={styles.bottomBar}>
         <div className="container" style={styles.bottomContainer}>
-          <span style={styles.copyright}>© 2026 Aura Salon. All rights reserved. Designed for premium pitch.</span>
+          <span style={styles.copyright}>© 2026 4K Hair Studio London. All rights reserved.</span>
           <button onClick={handleScrollToTop} style={styles.scrollTopBtn}>
             <span>Back to top</span>
             <ArrowUp size={14} />

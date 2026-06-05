@@ -3,23 +3,23 @@ import { Award, Heart, Star } from 'lucide-react';
 
 const TEAM = [
   {
-    id: 'sarah',
-    name: 'Sarah Jean',
-    role: 'Master Balayage Artist',
+    id: 'bilal',
+    name: 'Bilal',
+    role: 'Master Stylist & Director',
     rating: 4.9,
-    reviews: 142,
+    reviews: 58,
     experience: '10+ Years',
-    specialties: ['French Balayage', 'Color Melt Corrections', 'Glaze Toning'],
-    bio: 'Sarah trained in Paris and specializes in creating seamless, sun-kissed blonde dimensions that grow out beautifully.'
+    specialties: ['Precision Razor Cuts', 'Custom Hair Colouring', 'French Balayage'],
+    bio: 'Bilal is hands down the best hairstylist in London. Having trained globally, he specializes in creating custom dimensional color profiles and bespoke cuts tailored to individual bone structure.'
   },
   {
     id: 'marcus',
     name: 'Marcus Sterling',
-    role: 'Senior Editorial Stylist',
+    role: 'Senior Stylist',
     rating: 4.8,
-    reviews: 96,
+    reviews: 34,
     experience: '8 Years',
-    specialties: ['Precision Razor Cuts', 'French Bob Styling', 'Volume Blowouts'],
+    specialties: ['French Bob Styling', 'Volume Blowouts', 'Razor Texturing'],
     bio: 'Marcus focuses on structure and texture. His cuts are designed to sit perfectly naturally without requiring hours of daily styling.'
   },
   {
@@ -27,7 +27,7 @@ const TEAM = [
     name: 'Elena Rostova',
     role: 'Extensions Specialist',
     rating: 5.0,
-    reviews: 78,
+    reviews: 26,
     experience: '7 Years',
     specialties: ['Seamless Tape-ins', 'Keratin Silk Infusions', 'Scalp Detox Therapy'],
     bio: 'Elena is our structural health expert, restoring hair strength from root to tip and placing premium organic extensions.'

@@ -31,8 +31,8 @@ export default function Header({ theme, setTheme }) {
         <div className="container" style={styles.navContainer}>
           {/* Logo Monogram & Name */}
           <div style={styles.logo} onClick={() => scrollToSection('hero')}>
-            <span style={styles.logoLetter}>A</span>
-            <span style={styles.logoText}>AURA <span style={styles.logoSubText}>SALON</span></span>
+            <span style={styles.logoLetter}>4K</span>
+            <span style={styles.logoText}>4K <span style={styles.logoSubText}>HAIR STUDIO</span></span>
           </div>
 
           {/* Clean Controls: Theme Toggle & Side Menu Trigger */}
@@ -68,8 +68,8 @@ export default function Header({ theme, setTheme }) {
       >
         <div style={styles.drawerHeader}>
           <div style={styles.logo} onClick={() => scrollToSection('hero')}>
-            <span style={styles.logoLetter}>A</span>
-            <span style={styles.logoText}>AURA</span>
+            <span style={styles.logoLetter}>4K</span>
+            <span style={styles.logoText}>4K</span>
           </div>
           <button 
             onClick={() => setDrawerOpen(false)} 
@@ -99,7 +99,7 @@ export default function Header({ theme, setTheme }) {
             <Calendar size={15} style={{ marginRight: '8px' }} />
             Book Appointment
           </button>
-          <span style={styles.drawerInfo}>124 Luxury Way, Suite A • (555) 123-4567</span>
+          <span style={styles.drawerInfo}>86, 90 Park St, London • +44 7888 010133</span>
         </div>
       </div>
     </>
